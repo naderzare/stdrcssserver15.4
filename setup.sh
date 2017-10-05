@@ -20,7 +20,7 @@ echo "make .rcssserver"
 mkdir ~/Documents/log | a
 echo "make log"
 
-sudo echo " /usr/local/share" >> /etc/ld.so.conf
+sudo sh -c "echo '/usr/local/lib' >> /etc/ld.so.conf"
 sudo ldconfig
 
 sudo cp server.conf ~/.rcssserver/

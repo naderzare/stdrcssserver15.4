@@ -11,6 +11,7 @@ sudo chmod 777 * -R
 
 ./configure
 
+touch *
 make
 
 sudo make install

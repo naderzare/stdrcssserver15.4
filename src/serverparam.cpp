@@ -147,7 +147,7 @@ const double ServerParam::PLAYER_ACCEL_MAX = 1.0;
 //
 const double ServerParam::IMPARAM = 5.0;
 
-const double ServerParam::STAMINA_MAX = 8000.0; // [13.0.0] 4000.0 -> 8000.0
+const double ServerParam::STAMINA_MAX = 10000.0; // [13.0.0] 4000.0 -> 8000.0
 const double ServerParam::STAMINA_INC_MAX = 45.0;
 const double ServerParam::RECOVERY_DEC_THR = 0.3;
 const double ServerParam::RECOVERY_DEC = 0.002;
@@ -259,7 +259,7 @@ const int ServerParam::KAWAY_START = -1;
 const int ServerParam::POINT_TO_BAN = 5;
 const int ServerParam::POINT_TO_DURATION= 20;
 const unsigned int ServerParam::SAY_MSG_SIZE = 10;
-const unsigned int ServerParam::HEAR_MAX = 1;
+const unsigned int ServerParam::HEAR_MAX = 11;
 const unsigned int ServerParam::HEAR_INC = 1;
 const unsigned int ServerParam::HEAR_DECAY = 1;
 
@@ -328,7 +328,7 @@ const int ServerParam::SYNCH_SEE_OFFSET = 0; // [13.2.0] 30 -> 0;
 const int ServerParam::EXTRA_HALF_TIME = 100; // [13.0.0] 300 -> 100
 
 // 13.0.0
-const double ServerParam::STAMINA_CAPACITY = 130600.0; // [14.0.0] 148600.0 -> 130600.0
+const double ServerParam::STAMINA_CAPACITY = 150000.0; // [14.0.0] 148600.0 -> 130600.0
 const double ServerParam::MAX_DASH_ANGLE = +180.0;
 const double ServerParam::MIN_DASH_ANGLE = -180.0;
 const double ServerParam::DASH_ANGLE_STEP = 45.0; // [14.0.0] 90.0 -> 45.0
@@ -1261,8 +1261,8 @@ ServerParam::setDefaults()
     M_start_goal_l = 0;
     M_start_goal_r = 0;
 
-    M_fullstate_l = false;
-    M_fullstate_r = false;
+    M_fullstate_l = true;
+    M_fullstate_r = true;
 
     M_slowness_on_top_for_left_team = 1.0;
     M_slowness_on_top_for_right_team = 1.0;

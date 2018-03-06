@@ -20,28 +20,9 @@ make
 
 sudo make install
 
-
-file="~/.rcssserver"
-if [ -e "$file" ]; then
-	
-else
-	mkdir ~/.rcssserver	
-	echo "make .rcssserver"
-fi
-
-file="~/Documents/log"
-if [ -e "$file" ]; then
-        
-else
-        mkdir ~/Documents/log
-        echo "make log dir"
-fi
-
 echo "make log"
 
 sudo sh -c "echo '/usr/local/lib' >> /etc/ld.so.conf"
 sudo ldconfig
-
-sudo cp server.conf ~/.rcssserver/
 
 
